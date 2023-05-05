@@ -1,0 +1,99 @@
+:root {
+  --bg-color-main: rgb(25, 25, 25);
+  --blue: rgb(123, 132, 255);
+  --pink: rgb(179, 0, 202);
+  --purple: #6f42c1;
+  --tw-blue: rgb(0, 162, 255);
+  --dp: #110935;
+  --lb: #94bbe9;
+  --qv-t: rgb(248, 226, 164);
+}
+
+html {
+  background-color: var(--bg-color-main);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color-main);
+}
+
+.nav-item {
+  margin: 0 20px 0;
+  text-decoration: none;
+  background: linear-gradient(to right, var(--lg), var(--lg)),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.nav-item:hover {
+  color: black;
+  background-size: 0 3px, 100% 3px;
+  transition: 0.2s;
+}
+
+.text-fancy {
+  background: -webkit-linear-gradient(left, var(--blue), var(--pink));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-sec {
+  color: var(--sec);
+}
+
+.text-purple {
+  color: var(--purple);
+}
+
+.text-tw {
+  color: var(--tw-blue);
+}
+
+.text-qv {
+  color: var(--qv-t)
+}
+
+.bg-qv {
+  background: radial-gradient(var(--lb), var(--dp) 65%);
+}
+
+#bio-img {
+  width: 350px;
+  height: auto;
+  border-radius: 35%;
+}
+
+#BT-logo {
+  width: 80px;
+  height: auto;
+}
+
+#QV-logo {
+  width: 80px;
+  height: auto;
+}
+
+.bg-x-dark {
+  background-color: rgb(17, 17, 17);
+}
+
+@media screen and (max-width: 768px) {
+  #bio-img {
+    width: 250px;
+  }
+
+  #BT-logo {
+    width: 60px;
+  }
+}

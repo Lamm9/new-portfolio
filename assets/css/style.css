@@ -96,4 +96,79 @@ body {
   #BT-logo {
     width: 60px;
   }
+
+  #ig {
+    display: inline-block;
+    animation-name: igBackground;
+	  animation-duration: 5s;
+	  animation-iteration-count: infinite;
+	  animation-direction: alternate;
+	  animation-timing-function: ease-in-out;
+  }
+
+  @keyframes igBackground {
+    0% {
+      background: rgb(89, 0, 140);
+    }
+    50% {
+      background: rgb(207, 0, 104);
+    }
+    100% {
+      background: rgb(255, 180, 17);
+    }
+  }
+
+  #linkedin {
+    display: inline-block;
+    animation-name: linkBackground;
+	  animation-duration: 3s;
+	  animation-iteration-count: infinite;
+	  animation-direction: normal;
+	  animation-timing-function: linear;
+  }
+
+  @keyframes linkBackground {
+    0% {
+      background: rgb(2, 0, 99);
+    }
+    50% {
+      background: rgb(0, 48, 207);
+    }
+    100% {
+      background: rgb(2, 0, 99);
+    }
+  }
+
+  #gh {
+    display: inline-block;
+    animation-name: ghBackground;
+	  animation-duration: 3s;
+	  animation-iteration-count: infinite;
+	  animation-direction: alternate;
+	  animation-timing-function: linear;
+  }
+
+  @keyframes ghBackground {
+    0% {
+      background: rgb(20, 20, 20);
+    }
+    25% {
+      background: rgb(20, 20, 20);
+    }
+    50% {
+      background: rgb(68, 68, 68);
+    }
+    100% {
+      background: rgb(105, 105, 105);
+    }
+  }
+
+  .fa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+  }
 }

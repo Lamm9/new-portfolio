@@ -68,7 +68,7 @@ body {
 }
 
 .text-qv {
-  color: var(--qv-t)
+  color: var(--qv-t);
 }
 
 .bg-qv {
@@ -95,6 +95,76 @@ body {
   background-color: rgb(17, 17, 17);
 }
 
+.fa {
+  text-decoration: none;
+  border-radius: 60%;
+  padding: 1.5rem;
+}
+
+#ig {
+  color: white;
+  background: red; /* default color */
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(
+      to right,
+      rgb(89, 0, 140),
+      rgb(207, 0, 104),
+      rgb(255, 191, 17)
+    )
+    right;
+  background-size: 200%;
+  transition: 400ms ease-out;
+}
+
+#ig:hover {
+  background-position: left;
+}
+
+#linkedin {
+  color: white;
+  background: red; /* default color */
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(
+      to left,
+      rgb(2, 0, 99),
+      rgb(0, 48, 207),
+      rgb(8, 99, 236),
+      rgb(0, 48, 207),
+      rgb(24, 0, 110)
+    )
+    right;
+  background-size: 200%;
+  transition: 400ms ease-out;
+}
+
+#linkedin:hover {
+  background-position: left;
+}
+
+#gh {
+  color: white;
+  background: red; /* default color */
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(
+      to left,
+      rgb(43, 43, 43),
+      rgb(43, 43, 43),
+      rgb(124, 124, 124),
+      rgb(43, 43, 43),
+      rgb(43, 43, 43)
+    )
+    right;
+  background-size: 200%;
+  transition: 400ms ease-out;
+}
+
+#gh:hover {
+  background-position: left;
+}
+
 @media screen and (max-width: 768px) {
   #bio-img {
     width: 250px;
@@ -107,10 +177,10 @@ body {
   #ig {
     display: inline-block;
     animation-name: igBackground;
-	  animation-duration: 5s;
-	  animation-iteration-count: infinite;
-	  animation-direction: alternate;
-	  animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
   }
 
   @keyframes igBackground {
@@ -128,10 +198,10 @@ body {
   #linkedin {
     display: inline-block;
     animation-name: linkBackground;
-	  animation-duration: 3s;
-	  animation-iteration-count: infinite;
-	  animation-direction: normal;
-	  animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
   }
 
   @keyframes linkBackground {
@@ -149,10 +219,10 @@ body {
   #gh {
     display: inline-block;
     animation-name: ghBackground;
-	  animation-duration: 3s;
-	  animation-iteration-count: infinite;
-	  animation-direction: alternate;
-	  animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
 
   @keyframes ghBackground {
@@ -180,6 +250,5 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 50%;
-    width: 3rem;
   }
 }

@@ -48,6 +48,13 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.text-ycnaf {
+  background: -webkit-linear-gradient(left, var(--pink), var(--blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .text-sec {
   color: var(--sec);
 }

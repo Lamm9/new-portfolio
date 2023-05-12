@@ -57,9 +57,23 @@
   <body>
     <div class="container-md pt-5" id="bio">
       <div class="row mt-4 align-items-center">
-        <h1 class="display-4 text-center col text-fancy" id="my-name">
-          Hi, I'm Harrison Lamm
-        </h1>
+        <div class="col text-center">
+          <h1 class="display-4 text-center text-fancy" id="my-name">
+            Hi, I'm Harrison Lamm
+          </h1>
+          <div
+            id="carousel"
+            class="carousel slide vertical text-center pb-5 d-flex"
+            data-bs-ride="carousel"
+          >
+            <!-- if this don't work just put the "im" in the carousel items -->
+            <div class="carousel-inner p-0 m-0">
+              <h3 class="carousel-item active text-fancy">Web Developer</h3>
+              <h3 class="carousel-item text-fancy" id="graph">Graphic Designer</h3>
+              <h3 class="carousel-item text-fancy">Digital Artist</h3>
+            </div>
+          </div>
+        </div>
         <div class="text-center col me-3 mt-4">
           <img
             id="bio-img"
@@ -162,7 +176,7 @@
               />
             </div>
             <div class="col-md-10 text-center">
-              <h3 class="card-title fw-light text-qv">Quizverse</h3>
+              <h3 class="card-title fw-light text-qv" id="qv-title">Quizverse</h3>
             </div>
           </div>
           <div class="card-body">
@@ -193,11 +207,59 @@
           </div>
         </div>
       </div>
+      <!-- Coffee Finder -->
+      <div class="container">
+        <div class="card m-3 text-light" id="tamp-card">
+          <div class="card-header row bg-tan p-0 m-0 border-0" id="tamp-head">
+            <div class="col-auto">
+              <img
+                src="./assets/images/Tamp-logo-v2.png"
+                alt="Quizverse"
+                class="rounded float-left"
+                id="tamp-logo"
+              />
+            </div>
+            <div class="col-md-10 text-center">
+              <h3 class="card-title mt-3 text-change" id="tamp-title">Tamped and True</h3>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="text-center mb-2">
+                <h4 class="card-title fw-light mb-1">
+                  A coffee shop finder, made by a barista, for baristas.
+                </h4>
+                <div id="tamp-tech">
+                  <span class="text-danger bg-dark">HTML</span>
+                  <span class="text-purple bg-dark">CSS</span>
+                  <span class="text-warning bg-dark">JavaScript</span>
+                  <span class="text-success bg-dark">Express</span>
+                  <span class="text-primary bg-dark">MongoDB</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <p class="">Full-Stack</p>
+            </div>
+          </div>
+          <div class="text-end">
+            <a
+              class="btn disabled bg-x-dark p-1 mt-2 me-3 mb-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="#"
+              ><span class="text-warning">Coming soon!</span></a
+            >
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container-md mt-5" id="contact">
       <div class="row justify-content-center">
-        <h1 class="display-3 text-center text-fancy pb-2">Let's get in touch</h1>
+        <h1 class="display-3 text-center text-fancy pb-2">
+          Let's get in touch
+        </h1>
       </div>
       <div class="text-center text-light mt-3">
         <p>

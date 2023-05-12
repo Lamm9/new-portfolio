@@ -1,5 +1,6 @@
 :root {
   --bg-color-main: rgb(25, 25, 25);
+  --dark: #212529;
   --blue: rgb(123, 132, 255);
   --pink: rgb(179, 0, 202);
   --purple: #6f42c1;
@@ -7,6 +8,7 @@
   --dp: #110935;
   --lb: #94bbe9;
   --qv-t: rgb(248, 226, 164);
+  --tan: rgb(116, 92, 65);
 }
 
 html {
@@ -41,6 +43,11 @@ body {
   transition: 0.2s;
 }
 
+.carousel-item {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
 .text-fancy {
   background: -webkit-linear-gradient(left, var(--blue), var(--pink));
   background-clip: text;
@@ -71,14 +78,26 @@ body {
   color: var(--qv-t);
 }
 
+.text-change {
+  color: var(--dark);
+}
+
 .bg-qv {
   background: radial-gradient(var(--lb), var(--dp) 65%);
+}
+
+.bg-tan {
+  background-color: var(--tan);
 }
 
 #bio-img {
   width: 350px;
   height: auto;
   border-radius: 35%;
+}
+
+#im-a {
+  display: none;
 }
 
 #BT-logo {
@@ -89,6 +108,17 @@ body {
 #QV-logo {
   width: 80px;
   height: auto;
+}
+
+#tamp-logo {
+  width: 80px;
+  height: auto;
+}
+
+#tamp-card {
+  background-image: url(../images/coffee-stock.jpg);
+  background-position-y: 30%;
+  background-position-x: 10%;
 }
 
 .bg-x-dark {
@@ -165,9 +195,51 @@ body {
   background-position: left;
 }
 
+@media screen and (max-width: 1200px) {
+  #qv-title {
+    position: relative;
+    right: 10%;
+  }
+
+  #tamp-title {
+    position: relative;
+    right: 10%;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .carousel-item {
+    font-size: 1.5rem;
+    padding: none;
+    margin: none;
+  }
+
+  #graph {
+    font-size: 1.42rem;
+  }
+
   #bio-img {
     width: 250px;
+  }
+
+  #qv-title {
+    position: static;
+  }
+
+  #tamp-title {
+    position: static;
+  }
+
+  #tamp-logo {
+    display: none;
+  }
+
+  #tamp-head {
+    background-color: transparent;
+  }
+
+  .text-change {
+    color: white;
   }
 
   #BT-logo {
